@@ -84,7 +84,10 @@ USE_I18N = True
 USE_TZ = True
 
 # CORS
-CORS_ALLOW_ALL_ORIGINS = True  # For testing; replace with CORS_ALLOWED_ORIGINS for production
+CORS_ALLOWED_ORIGINS = [
+    "https://fitness-tracker-zeta-two.vercel.app",
+]
+# For testing; replace with CORS_ALLOWED_ORIGINS for production
 
 # Default primary key
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
